@@ -1,8 +1,9 @@
+
 #include <windows.h>
 
 //Changes the mouse position to the designated cordinates
 void gotoxy(short X, short Y)
-{
+{	
 	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),(COORD){X,Y});
 }
 //Hides the visability of the cursor
