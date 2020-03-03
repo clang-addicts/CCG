@@ -95,52 +95,52 @@ int display()
 	SetColor(0);
 	printf("        ");
 	SetColor(220);
-	printf("        |        |        |        |      Move : arrow button            |        |        |        |    ");//50
+	printf("        |        |        |        |      Move : arrow button    |        |        |        |        |   ");//50
 		printf("\n");
 	SetColor(0);
 	printf("        ");
 	SetColor(220);
-	printf("        |        |        |        |                                     |        |        |        |    ");//50
+	printf("        |        |        |        |                             |        |        |        |        |   ");//50
 		printf("\n");
 	SetColor(0);
 	printf("        ");
 		SetColor(220);
-	printf("        |        |        |        |      Play : P button                |        |        |        |    ");//50
+	printf("        |        |        |        |      Play : P button        |        |        |        |        |   ");//50
 		printf("\n");
 	SetColor(0);
 	printf("        ");
 		SetColor(220);
-	printf("        |        |        |        |                                     |        |        |        |    ");//50
+	printf("        |        |        |        |                             |        |        |        |        |   ");//50
 		printf("\n");
 	SetColor(0);
 	printf("        ");
 		SetColor(220);
-	printf("        |        |        |        |      End : ESC button               |        |        |        |    ");//50
+	printf("        |        |        |        |      End : ESC button       |        |        |        |        |   ");//50
 		printf("\n");
 	SetColor(0);
 	printf("        ");
 		SetColor(220);
-	printf("        |        |        |        |                                     |        |        |        |    ");//50
+	printf("        |        |        |        |                             |        |        |        |        |   ");//50
 		printf("\n");
 	SetColor(0);
 	printf("        ");
 		SetColor(220);
-	printf("        |        |        |        |                                     |        |        |        |    ");//50
+	printf("        |        |        |        |                             |        |        |        |        |   ");//50
 		printf("\n");
 	SetColor(0);
 	printf("        ");
 		SetColor(220);
-	printf("        |        |        |        |                                     |        |        |        |    ");//50
+	printf("        |        |        |        |                             |        |        |        |        |   ");//50
 		printf("\n");
 	SetColor(0);
 	printf("        ");
 		SetColor(220);
-	printf("        |        |        |        |                                     |        |        |        |    ");//50
+	printf("        |        |        |        |                             |        |        |        |        |   ");//50
 		printf("\n");
 	SetColor(0);
 	printf("        ");
 		SetColor(220);
-	printf("        |        |        |        |                                     |        |        |        |    ");//50
+	printf("        |        |        |        |                             |        |        |        |        |   ");//50
 		printf("\n");
 	SetColor(0);
 
