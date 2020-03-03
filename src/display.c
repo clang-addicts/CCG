@@ -4,93 +4,22 @@ int display()
 {
 	int i;
 	gotoxy(8, 1);
-	SetColor(230);
-	printf("                                                                                                         ");//50
-	printf("\n");
-	SetColor(0);
-	printf("        ");
-	SetColor(230);
-	printf("                                                                                                         ");//50
+	for(i = 1; i <= 4; i++){
+		SetColor(230);
+		printf("                                                                                                         ");//50
 		printf("\n");
-	SetColor(0);
-	printf("        ");
-	SetColor(230);
-	printf("                                                                                                         ");//50
-		printf("\n");
-	SetColor(0);
-	printf("        ");
-	SetColor(230);
-	printf("                                                                                                         ");//50
-		printf("\n");
-	SetColor(0);
-	printf("        ");
+		SetColor(0);
+		printf("        ");
+	}
 	SetColor(230);
 	printf("                                          {SNAKE on the DESERT}                                          ");//50
+	for(i = 1; i <= 13; i++){
 		printf("\n");
-	SetColor(0);
-	printf("        ");
-	SetColor(230);
-	printf("                                                                                                         ");//50
-		printf("\n");
-	SetColor(0);
-	printf("        ");
-	SetColor(230);
-	printf("                                                                                                         ");//50
-		printf("\n");
-	SetColor(0);
-	printf("        ");
-	SetColor(230);
-	printf("                                                                                                         ");//50
-		printf("\n");
-	SetColor(0);
-	printf("        ");
-	SetColor(230);
-	printf("                                                                                                         ");//50
-		printf("\n");
-	SetColor(0);
-	printf("        ");
-	SetColor(230);
-	printf("                                                                                                         ");//50
-		printf("\n");
-	SetColor(0);
-	printf("        ");
-	SetColor(230);
-	printf("                                                                                                         ");//50
-		printf("\n");
-	SetColor(0);
-	printf("        ");
-	SetColor(230);
-	printf("                                                                                                         ");//50
-		printf("\n");
-	SetColor(0);
-	printf("        ");
-	SetColor(230);
-	printf("                                                                                                         ");//50
-		printf("\n");
-	SetColor(0);
-	printf("        ");
-	SetColor(230);
-	printf("                                                                                                         ");//50
-		printf("\n");
-	SetColor(0);
-	printf("        ");
-	SetColor(230);
-	printf("                                                                                                         ");//50
-		printf("\n");
-	SetColor(0);
-	printf("        ");
-	SetColor(230);
-	printf("                                                                                                         ");//50
-		printf("\n");
-	SetColor(0);
-	printf("        ");
-	SetColor(230);
-	printf("                                                                                                         ");//50
-		printf("\n");
-	SetColor(0);
-	printf("        ");
-	SetColor(230);
-	printf("                                                                                                         ");//50
+		SetColor(0);
+		printf("        ");
+		SetColor(230);
+		printf("                                                                                                         ");//50
+	}
 		printf("\n");
 	SetColor(0);
 	printf("        ");
@@ -100,7 +29,7 @@ int display()
 	SetColor(0);
 	printf("        ");
 	SetColor(220);
-	printf("        |        |        |        |                             |        |        |        |        |   ");//50
+	printf("        |        |        |        |                             |        |        |        |        |   ");
 		printf("\n");
 	SetColor(0);
 	printf("        ");
@@ -110,39 +39,19 @@ int display()
 	SetColor(0);
 	printf("        ");
 		SetColor(220);
-	printf("        |        |        |        |                             |        |        |        |        |   ");//50
+	printf("        |        |        |        |                             |        |        |        |        |   ");
 		printf("\n");
 	SetColor(0);
 	printf("        ");
 		SetColor(220);
 	printf("        |        |        |        |      End : ESC button       |        |        |        |        |   ");//50
+	for(i = 1; i <= 5; i++){
 		printf("\n");
-	SetColor(0);
-	printf("        ");
+		SetColor(0);
+		printf("        ");
 		SetColor(220);
-	printf("        |        |        |        |                             |        |        |        |        |   ");//50
-		printf("\n");
-	SetColor(0);
-	printf("        ");
-		SetColor(220);
-	printf("        |        |        |        |                             |        |        |        |        |   ");//50
-		printf("\n");
-	SetColor(0);
-	printf("        ");
-		SetColor(220);
-	printf("        |        |        |        |                             |        |        |        |        |   ");//50
-		printf("\n");
-	SetColor(0);
-	printf("        ");
-		SetColor(220);
-	printf("        |        |        |        |                             |        |        |        |        |   ");//50
-		printf("\n");
-	SetColor(0);
-	printf("        ");
-		SetColor(220);
-	printf("        |        |        |        |                             |        |        |        |        |   ");//50
-		printf("\n");
-	SetColor(0);
+		printf("        |        |        |        |                             |        |        |        |        |   ");//50
+	}
 
 	SetColor(0);
 	cursor(FALSE);
