@@ -11,13 +11,12 @@ int move(){
 	
 	for(i = 1; i <= 50; i++){
 		for(j = 1; j <= 50; j++){
-			screen[j][i];
+			screen[j][i] = printf("  ");
 			SetColor(230);
-			printf("  ");
 		}
 		printf("\n");
 	}
-	Setcolor(0);
+	SetColor(0);
 	
 	while(1){
 		if (kbhit()){
