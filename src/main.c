@@ -34,12 +34,14 @@ int main(int argc, char **argv)
 						case 0:
 						{
 							// START GAME
-
+							init_snake();
+							break;
 						}
 						case 1:
 						{
 							// END GAME
-
+							quit_program();
+							break;
 						}
 					}
 				}
@@ -48,28 +50,28 @@ int main(int argc, char **argv)
 				case ASCII_w:
 				case ASCII_ARROW_UP:
 				{
-
+					//display_select_up();
 					break;
 				}
 				case ASCII_A:
 				case ASCII_a:
 				case ASCII_ARROW_LEFT:
 				{
-
+					display_select_left();
 					break;
 				}
 				case ASCII_S:
 				case ASCII_s:
 				case ASCII_ARROW_DOWN:
 				{
-
+					// displau_select_down();
 					break;
 				}
 				case ASCII_D:
 				case ASCII_d:
 				case ASCII_ARROW_RIGHT:
 				{
-
+					display_select_right();
 					break;
 				}
 			}

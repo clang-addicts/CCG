@@ -56,3 +56,14 @@ int display()
 	SetColor(0);
 	cursor(FALSE);
 }
+
+void display_select_left()
+{
+
+
+}
+
+void display_select_right()
+{
+	
+}
