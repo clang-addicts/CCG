@@ -21,16 +21,18 @@ int move(){
 	int x = 0, y = 0;
 	while(1){
 		gotoxy(x, y);
-		printf("*");
+		printf(" ");
 		if(kbhit()){
 			in=getch();
 			switch(in){
-				case 'w' : y--; break;
-				case 'a' : x--;	break;
-				case 's' : y++;	break;
-				case 'd' : x++;	break;
-			}
-			system ("cls");	
+				case 'w' : y--;  break;
+				case 'a' : x--;	 break;
+				case 's' : y++;	 break;
+				case 'd' : x++;	 break;
+			}	
+
 		}
+		gotoxy(x, y);
+		printf("*");
 	}
 }
