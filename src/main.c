@@ -1,40 +1,82 @@
 #include <windows.h>
 #include <stdio.h>
 
+#include "setting.h"
+
 #include "function.c"
 
 #include "display.c"
-
 #include "move.c"
-
 
 int main(int argc, char **argv)
 {	
-	move();
-	/*
-	int in;
+	int user_input = 0;
+	int user_selection = 0;
+
+	//init_variable();
+	//display_menu();
+
 	while(1)
 	{
-		if(kbhit())
+		if( kbhit() )
 		{
-			in=getch(); 
-			switch(in)
+			user_input = getch();
+			switch( user_input )
 			{
-				case 72: update(1); break;
-				case 80: update(2); break;
-				case 13:{
-					switch(MENU_Y){
-						case 12: weapon();
-						case 15: help();
-						case 18: exit(0);
+				case ASCII_ESC: 
+				{
+					quit_program();
+				}
+				case ASCII_ENTER:
+				{
+					switch( user_selection )
+					{
+						case 0:
+						{
+							// START GAME
+
+						}
+						case 1:
+						{
+							// END GAME
+
+						}
 					}
 				}
-			in = getch();				
-			printf("%d\n",in);
-			if( in == ASCII_KEY_ESC ) {
-				return 0;
+				// SELECTION
+				case ASCII_W:
+				case ASCII_w:
+				case ASCII_ARROW_UP:
+				{
+
+					break;
+				}
+				case ASCII_A:
+				case ASCII_a:
+				case ASCII_ARROW_LEFT:
+				{
+
+					break;
+				}
+				case ASCII_S:
+				case ASCII_s:
+				case ASCII_ARROW_DOWN:
+				{
+
+					break;
+				}
+				case ASCII_D:
+				case ASCII_d:
+				case ASCII_ARROW_RIGHT:
+				{
+
+					break;
+				}
 			}
 		}
 	}
-	*/
+
+	move();
+
+	return 0;
 }
