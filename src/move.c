@@ -1,7 +1,6 @@
 #include <stdio.h>    
-
 int move(){
-	
+	/*	
 	int i;
 	int j;
 	int x;
@@ -17,17 +16,21 @@ int move(){
 		printf("\n");
 	}
 	SetColor(0);
-	
+	*/
+	char in;
+	int x = 0, y = 0;
 	while(1){
-		if (kbhit()){
-			in = getch();
+		gotoxy(x, y);
+		printf("*");
+		if(kbhit()){
+			in=getch();
 			switch(in){
-				case 'W' : screen[x][y+ 1] == '.'; printf("%c", screen[x][y+ 1]); break;
-				case 'S' : screen[x][y- 1] == '.'; printf("%c", screen[x][y- 1]); break;
-				case 'A' : screen[x- 1][y] == '.'; printf("%c", screen[x-1][y] ); break;
-				case 'D' : screen[x+ 1][y] == '.'; printf("%c", screen[x+ 1][y]); break; 
+				case 'w' : y--; break;
+				case 'a' : x--;	break;
+				case 's' : y++;	break;
+				case 'd' : x++;	break;
 			}
+			system ("cls");	
 		}
 	}
-	cursor(FALSE);
 }
