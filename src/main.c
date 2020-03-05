@@ -45,7 +45,7 @@ int main(int argc, char **argv)
 						}
 					}
 				}
-				// SELECTION
+				// SELECTIONS
 				case ASCII_W:
 				case ASCII_w:
 				case ASCII_ARROW_UP:
@@ -79,6 +79,5 @@ int main(int argc, char **argv)
 	}
 
 	move();
-
 	return 0;
 }
