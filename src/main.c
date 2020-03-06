@@ -14,9 +14,9 @@ int main(int argc, char **argv)
 	int user_selection = 0;
 
 	//init_variable();
-	//display_menu();
+	display_menu();
 
-/*
+	/*	
 	while(1)
 	{
 		if( kbhit() )
@@ -61,13 +61,14 @@ int main(int argc, char **argv)
 					display_select_left();
 					break;
 				}
+				
 				case ASCII_S:
 				case ASCII_s:
 				case ASCII_ARROW_DOWN:
 				{
 					// displau_select_down();
 					break;
-				}
+				} 
 				case ASCII_D:
 				case ASCII_d:
 				case ASCII_ARROW_RIGHT:
