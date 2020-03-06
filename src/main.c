@@ -6,6 +6,7 @@
 
 #include "function.c"
 
+#include "letter.c"
 #include "display.c"
 #include "move.c"
 

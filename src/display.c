@@ -36,6 +36,18 @@ void display_box_full(int posX, int posY, int sizeX, int sizeY, int color)
 	}
 }
 
+void display_menu(){
+
+	display_clear(240);
+	
+	display_box_full(20,4,80,10,144);
+	display_box_full(26,18,24,7,144);
+	display_box_full(70,18,24,7,144);
+
+	letter_print_char(0,0,'A',192,240);
+
+}
+
 int display()
 {
 	int i;
@@ -242,11 +254,3 @@ void display_select_right()
 	printf("               ");
 	SetColor(0);
 }
-
-void display_menu(){
-	display_clear(240);
-	
-	display_box_full(20,3,80,10,144);
-
-}
-
