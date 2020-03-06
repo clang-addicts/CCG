@@ -1,5 +1,6 @@
 #include <windows.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 #include "setting.h"
 
@@ -13,8 +14,12 @@ int main(int argc, char **argv)
 	int user_input = 0;
 	int user_selection = 0;
 
-	//init_variable();
-	display_menu();
+	// init_variable();
+
+	display_set_screen_size(DISPLAY_SIZE_X,DISPLAY_SIZE_Y);
+	display_clear(240);
+	display_box_full(5,5,5,5,80);
+	// display_menu();
 
 	/*	
 	while(1)

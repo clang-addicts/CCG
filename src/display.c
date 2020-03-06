@@ -1,4 +1,40 @@
-#include <stdio.h>
+
+void display_set_screen_size(int X, int Y)
+{
+	SetConsoleScreenBufferSize(GetStdHandle(STD_OUTPUT_HANDLE),(COORD){X,Y});
+}
+
+void display_clear(int color)
+{
+	int i;
+	char output[DISPLAY_SIZE_X];
+	
+	for(i=0;i<DISPLAY_SIZE_X;i++) {
+		output[i]=' ';
+	}
+	output[i]='\0';
+
+	SetColor(color);
+	for(i=0;i<DISPLAY_SIZE_Y;i++) {
+		gotoxy(0,i); printf("%s",output);
+	}	
+}
+
+void display_box_full(int posX, int posY, int sizeX, int sizeY, int color)
+{
+	int i;
+	char output[sizeX];
+
+	for(i=0;i<sizeX;i++) {
+		output[i]=' ';
+	}
+	output[i]='\0';
+	
+	SetColor(color);
+	for(i=posY;i<(posY+sizeY);i++) {
+		gotoxy(posX,i); printf("%s",output);
+	}
+}
 
 int display()
 {
