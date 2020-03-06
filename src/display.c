@@ -59,13 +59,152 @@ int display()
 
 void display_select_left()
 {
-
-
+	int i;
+	char a[6] = "start";
+	char b[6] = "end";
+	int x = 1, y = 1;
+	gotoxy(x, y);
+	for(i = 1; i <= 4; i++){
+		SetColor(230);
+		printf("                                                                                                      ");
+		gotoxy(x, y++);
+		SetColor(0);
+		printf("        ");
+	}
+	SetColor(230);
+	printf("                                          {SNAKE on the DESERT}                                       ");
+	gotoxy(x, y++);
+	SetColor(0);
+	printf("        ");
+	for(i = 1; i <= 7; i++){
+		SetColor(230);
+		printf("                                                                                                      ");
+		gotoxy(x, y++);
+		SetColor(0);
+		printf("        ");
+	}
+	x = 5; 
+	y = 15;
+	gotoxy(x, y);
+	for(i = 1; i <= 4; i++){
+		SetColor(230);
+		printf("               ");
+		SetColor(0);
+		gotoxy(x, y++);
+		printf("             ");
+	}
+		SetColor(230);
+		printf("     %s     ", a);
+		SetColor(0);
+		gotoxy(x, y++);
+		printf("             ");
+	for(i = 1; i <= 4; i++){
+		SetColor(230);
+		printf("               ");
+		SetColor(0);
+		gotoxy(x, y++);
+		printf("             ");
+	}
+	SetColor(200);
+	printf("               ");
+	SetColor(0);
+	x = 74;
+	y = 15;
+	gotoxy(x, y);
+	for(i = 1; i <= 4; i++){
+		SetColor(230);
+		printf("               ");
+		SetColor(0);
+		gotoxy(x, y++);
+		printf("             ");
+	}	
+		SetColor(230);
+		printf("      %s      ", b);
+		SetColor(0);
+		gotoxy(x, y++);
+		printf("             ");
+	for(i = 1; i <= 4; i++){
+		SetColor(230);
+		printf("               ");
+		SetColor(0);
+		gotoxy(x, y++);
+		printf("             ");
+	}					
 }
 
 void display_select_right()
 {
-	
+	int i;
+	char a[6] = "start";
+	char b[6] = "end";
+	int x = 1, y = 1;
+	gotoxy(x, y);
+	for(i = 1; i <= 4; i++){
+		SetColor(230);
+		printf("                                                                                                      ");
+		gotoxy(x, y++);
+		SetColor(0);
+		printf("        ");
+	}
+	SetColor(230);
+	printf("                                          {SNAKE on the DESERT}                                       ");
+	gotoxy(x, y++);
+	SetColor(0);
+	printf("        ");
+	for(i = 1; i <= 7; i++){
+		SetColor(230);
+		printf("                                                                                                      ");
+		gotoxy(x, y++);
+		SetColor(0);
+		printf("        ");
+	}
+	x = 5; 
+	y = 15;
+	gotoxy(x, y);
+	for(i = 1; i <= 4; i++){
+		SetColor(230);
+		printf("               ");
+		SetColor(0);
+		gotoxy(x, y++);
+		printf("             ");
+	}
+		SetColor(230);
+		printf("     %s     ", a);
+		SetColor(0);
+		gotoxy(x, y++);
+		printf("             ");
+	for(i = 1; i <= 4; i++){
+		SetColor(230);
+		printf("               ");
+		SetColor(0);
+		gotoxy(x, y++);
+		printf("             ");
+	}
+	x = 74;
+	y = 15;
+	gotoxy(x, y);
+	for(i = 1; i <= 4; i++){
+		SetColor(230);
+		printf("               ");
+		SetColor(0);
+		gotoxy(x, y++);
+		printf("             ");
+	}	
+		SetColor(230);
+		printf("      %s      ", b);
+		SetColor(0);
+		gotoxy(x, y++);
+		printf("             ");
+	for(i = 1; i <= 4; i++){
+		SetColor(230);
+		printf("               ");
+		SetColor(0);
+		gotoxy(x, y++);
+		printf("             ");
+	}
+	SetColor(200);
+	printf("               ");
+	SetColor(0);
 }
 
 void display_menu(){
@@ -138,3 +277,4 @@ void display_menu(){
 		printf("             ");
 	}				
 }
+

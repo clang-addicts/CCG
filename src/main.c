@@ -16,6 +16,7 @@ int main(int argc, char **argv)
 	//init_variable();
 	//display_menu();
 
+/*
 	while(1)
 	{
 		if( kbhit() )
@@ -79,5 +80,6 @@ int main(int argc, char **argv)
 	}
 
 	move();
+*/
 	return 0;
 }
