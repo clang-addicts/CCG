@@ -13,6 +13,7 @@
 void init() 
 {
 	display_set_screen_size(DISPLAY_SIZE_X,DISPLAY_SIZE_Y);
+	cursor(FALSE);
 }
 
 int main(int argc, char **argv)
