@@ -18,16 +18,16 @@
 #define ASCII_ARROW_RIGHT 0
 
 // UPPER CASE ALPHABET
-#define ASCII_A 0
-#define ASCII_D 0
-#define ASCII_S 0
-#define ASCII_W 0
+#define ASCII_A 101
+#define ASCII_D 104
+#define ASCII_S 123
+#define ASCII_W 127
 
 // LOWER CASE ALPHABET
-#define ASCII_a 0
-#define ASCII_d 0
-#define ASCII_s 0
-#define ASCII_w 0
+#define ASCII_a 141
+#define ASCII_d 144
+#define ASCII_s 163
+#define ASCII_w 167
 /* KEYBOARD INPUT */
 
 #endif

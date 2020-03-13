@@ -21,9 +21,8 @@ int main(int argc, char **argv)
 	int user_selection = 0;
 
 	init();
-
 	display_menu();
-	/*	
+	
 	while(1)
 	{
 		if( kbhit() )
@@ -31,6 +30,7 @@ int main(int argc, char **argv)
 			user_input = getch();
 			switch( user_input )
 			{
+				/*
 				case ASCII_ESC: 
 				{
 					quit_program();
@@ -52,42 +52,42 @@ int main(int argc, char **argv)
 							break;
 						}
 					}
-				}
+				} */
 				// SELECTIONS
-				case ASCII_W:
-				case ASCII_w:
-				case ASCII_ARROW_UP:
+				case 'w':
+				case 'W':
+				//case ASCII_ARROW_UP:
 				{
-					//display_select_up();
+					display_select_up();
 					break;
 				}
+				/*
 				case ASCII_A:
 				case ASCII_a:
 				case ASCII_ARROW_LEFT:
 				{
 					display_select_left();
 					break;
-				}
-				
-				case ASCII_S:
-				case ASCII_s:
-				case ASCII_ARROW_DOWN:
+				} */				
+				case 's':
+				case 'S':
+			//	case ASCII_ARROW_DOWN:
 				{
-					// displau_select_down();
+				    display_select_down();
 					break;
 				} 
-				case ASCII_D:
+		/*		case ASCII_D:
 				case ASCII_d:
 				case ASCII_ARROW_RIGHT:
 				{
 					display_select_right();
 					break;
-				}
+				}	*/	
 			}
 		}
 	}
 
 	move();
-*/
+
 	return 0;
 }
