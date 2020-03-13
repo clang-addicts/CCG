@@ -16,8 +16,19 @@ void init()
 	cursor(FALSE);
 }
 
+
+void de_init(){
+	return ;
+}
+
+void quit_program(){
+	de_init();
+	exit(0);
+}
+
 int main(int argc, char **argv)
 {	
+
 	int user_input = 0;
 	int user_selection = 0;
 
@@ -31,11 +42,11 @@ int main(int argc, char **argv)
 			user_input = getch();
 			switch( user_input )
 			{
-				/*
 				case ASCII_ESC: 
 				{
 					quit_program();
 				}
+				
 				case ASCII_ENTER:
 				{
 					switch( user_selection )
@@ -43,7 +54,7 @@ int main(int argc, char **argv)
 						case 0:
 						{
 							// START GAME
-							init_snake();
+							//init_snake();
 							break;
 						}
 						case 1:
@@ -53,12 +64,13 @@ int main(int argc, char **argv)
 							break;
 						}
 					}
-				} */
+				} 
 				// SELECTIONS
 				case 'w':
 				case 'W':
 				//case ASCII_ARROW_UP:
 				{
+					user_selection = 0;
 					display_select_up();
 					break;
 				}
@@ -74,6 +86,7 @@ int main(int argc, char **argv)
 				case 'S':
 			//	case ASCII_ARROW_DOWN:
 				{
+					user_selection = 1;
 				    display_select_down();
 					break;
 				} 
