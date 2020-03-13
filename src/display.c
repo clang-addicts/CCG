@@ -40,20 +40,20 @@ void display_menu(){
 
 	display_clear(240);
 	
-	display_box_full(19,4,80,10,144);
-//	display_box_full(24,15,72,5,200);
-//	display_box_full(24,21,72,5,144);
+	display_box_full(20,4,80,10,144);
+	display_box_full(24,15,72,5,200);
+	display_box_full(24,21,72,5,144);
 	
-//	letter_print_char(33,6,'S',192,144);
-//	letter_print_char(44,6,'N',192,144);
-//	letter_print_char(55,6,'A',192,144);
-//	letter_print_char(66,6,'K',192,144);
-//	letter_print_char(77,6,'E',192,144);
+	letter_print_char(33,6,'S',192,144);
+	letter_print_char(44,6,'N',192,144);
+	letter_print_char(55,6,'A',192,144);
+	letter_print_char(66,6,'K',192,144);
+	letter_print_char(77,6,'E',192,144);
 
-//	SetColor(200);
-//	gotoxy(55, 17); printf("start game");
-//	SetColor(144);
-//	gotoxy(55, 23);	printf("end program");
+	SetColor(200);
+	gotoxy(55, 17); printf("start game");
+	SetColor(144);
+	gotoxy(55, 23);	printf("end program");
 
 }
 
