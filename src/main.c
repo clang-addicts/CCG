@@ -17,11 +17,13 @@ void init()
 }
 
 
-void de_init(){
+void de_init()
+{
 	return ;
 }
 
-void quit_program(){
+void quit_program()
+{
 	de_init();
 	exit(0);
 }
