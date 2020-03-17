@@ -80,3 +80,10 @@ void display_select_down(){
 	gotoxy(55, 23);	printf("end program");
 	
 }
+void display_play_box(){
+	int i;
+	display_box_full(10, 0, 100, 30, 200);
+	display_box_full(11, 1, 98, 28, 0);
+	while(1){
+	}
+}
