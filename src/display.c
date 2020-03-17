@@ -57,29 +57,30 @@ void display_menu(){
 
 }
 
-void display_select_up(){
-	
-	display_box_full(24,15,72,5,200);
-	display_box_full(24,21,72,5,144);
-	
-	SetColor(200);
-	gotoxy(55, 17); printf("start game");
-	SetColor(144);
-	gotoxy(55, 23);	printf("end program");
+void display_selection_change(int menu_selection){
+	if(menu_selection == 0)
+	{
+		display_box_full(24,15,72,5,200);
+		display_box_full(24,21,72,5,144);
 		
+		SetColor(200);
+		gotoxy(55, 17); printf("start game");
+		SetColor(144);
+		gotoxy(55, 23);	printf("end program");
+		
+	}
+	else if(menu_selection == 1)
+	{
+		display_box_full(24,15,72,5,144);
+		display_box_full(24,21,72,5,200);
+
+		SetColor(144);
+		gotoxy(55, 17); printf("start game");
+		SetColor(200);
+		gotoxy(55, 23);	printf("end program");
+	}
 }
 
-void display_select_down(){
-	
-	display_box_full(24,15,72,5,144);
-	display_box_full(24,21,72,5,200);
-
-	SetColor(144);
-	gotoxy(55, 17); printf("start game");
-	SetColor(200);
-	gotoxy(55, 23);	printf("end program");
-	
-}
 void display_play_box(){
 	int i;
 	display_box_full(10, 0, 100, 30, 200);
