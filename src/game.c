@@ -20,10 +20,10 @@ int init_snake()
 	*/
 	char in;
 	int x = 0, y = 0;
+	display_clear(0);
 	while(1){
-		gotoxy(x, y);
-		printf(" ");
 		if(kbhit()){
+			SetColor(0); gotoxy(x, y); printf("  ");
 			in=getch();
 			switch(in){
 				case 'w' : 
@@ -31,18 +31,16 @@ int init_snake()
 				case ASCII_ARROW_UP : y--; break;
 				case 'a' :
 				case 'A' : 
-				case ASCII_ARROW_LEFT : x--; break;
+				case ASCII_ARROW_LEFT : x-=2; break;
 				case 's' :
 				case 'S' :
 				case ASCII_ARROW_DOWN : y++; break;
 				case 'd' : 
 				case 'D' : 
-				case ASCII_ARROW_RIGHT : x++; break;
+				case ASCII_ARROW_RIGHT : x+=2; break;
 			}	
-
+			SetColor(260); gotoxy(x, y); printf("  ");
 		}
-		gotoxy(x, y);
-		printf("*");
-		cursor(0);
 	}
 }
+
