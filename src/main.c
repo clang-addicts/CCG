@@ -1,6 +1,7 @@
 #include <windows.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 #include "setting.h"
 
@@ -30,7 +31,6 @@ void quit_program()
 
 int main(int argc, char **argv)
 {	
-
 	int user_input = 0;
 	int user_selection = 0;
 

@@ -1,7 +1,6 @@
-
 int init_snake()
 {
-    	/*	
+		    	/*	
 	int i;
 	int j;
 	int x;
@@ -18,6 +17,7 @@ int init_snake()
 	}
 	SetColor(0);
 	*/
+	display_play_box();
 	char in;
 	int x = 0, y = 0;
 	display_clear(0);
