@@ -12,14 +12,14 @@
 
 void init() 
 {
+	display_set_fullscreen();
 	display_set_screen_size(DISPLAY_SIZE_X,DISPLAY_SIZE_Y);
 	cursor(FALSE);
 }
 
-
 void de_init()
 {
-	return ;
+	return;
 }
 
 void quit_program()
@@ -30,12 +30,12 @@ void quit_program()
 
 int main(int argc, char **argv)
 {	
-
+	init();
+	display_menu();
+	
 	int user_input = 0;
 	int user_selection = 0;
 
-	init();
-	display_menu();
 	while(1)
 	{
 		if( kbhit() )
@@ -100,7 +100,6 @@ int main(int argc, char **argv)
 			}
 		}
 	}
-
 
 	move();
 
