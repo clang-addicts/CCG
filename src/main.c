@@ -25,6 +25,7 @@ void de_init()
 void quit_program()
 {
 	de_init();
+	gotoxy(0,0);
 	exit(0);
 }
 
@@ -55,6 +56,7 @@ int main(int argc, char **argv)
 						{
 							// START GAME
 							init_snake();
+							quit_program();
 							break;
 						}
 						case 1:
@@ -101,7 +103,6 @@ int main(int argc, char **argv)
 		}
 	}
 
-
-
+	de_init();
 	return 0;
 }

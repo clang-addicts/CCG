@@ -2,8 +2,8 @@
 #define __SETTING_H__
 
 /* SCREEN SIZE */
-#define DISPLAY_SIZE_X 120
-#define DISPLAY_SIZE_Y 30                                                                    
+#define DISPLAY_SIZE_X 240
+#define DISPLAY_SIZE_Y 67                                                       
 /* SCREEN SIZE */
 
 /* KEYBOARD INPUT */

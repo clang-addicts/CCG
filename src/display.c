@@ -36,6 +36,28 @@ void display_box_full(int posX, int posY, int sizeX, int sizeY, int color)
 	}
 }
 
+void display_box_edge(int posX, int posY, int sizeX, int sizeY, int color)
+{
+	int i;
+	char output[sizeX];
+
+	for(i=0;i<sizeX;i++) {
+		output[i]=' ';
+	}
+	output[i]='\0';
+	
+	SetColor(color);
+	for(i=posY;i<(posY+sizeY);i++) {
+		if(i == posY || i == posY+sizeY-1) {
+			gotoxy(posX,i); printf("%s",output);
+		}
+		else {
+			gotoxy(posX,i); printf("  ");
+			gotoxy(posX+sizeX-2,i); printf("  ");
+		}		
+	}
+}
+
 void display_menu(){
 
 	display_clear(240);
@@ -81,7 +103,3 @@ void display_selection_change(int menu_selection){
 	}
 }
 
-void display_play_box(){
-	display_box_full(9, 0, 102, 30, 200);
-	display_box_full(10, 0, 100, 30, 0);
-}
