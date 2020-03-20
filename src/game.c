@@ -1,6 +1,7 @@
+
 int init_snake()
 {
-		    	/*	
+    	/*	
 	int i;
 	int j;
 	int x;
@@ -17,9 +18,11 @@ int init_snake()
 	}
 	SetColor(0);
 	*/
+
 	display_clear(0);
 	display_play_box();
 	random_food();
+
 	char in;
 	int x = 0, y = 0;
 	while(1){
@@ -46,16 +49,14 @@ int init_snake()
 }
 
 int random_food(){
-	int R_NUM_X;
-	int R_NUM_Y;
+	SetColor(4);
+	int R_NUM_X, R_NUM_Y;
         srand(time(0));
-      		R_NUM_X=rand()%109;
+            R_NUM_X=rand()%100;
             R_NUM_Y=rand()%30;
-            if(109>R_NUM_X>11){
-            	if(30>R_NUM_Y>0){
-            	gotoxy(R_NUM_X, R_NUM_Y);
-				printf("  ");
-				}
-      		}
+            if(R_NUM_X>9) 
+				if(R_NUM_Y>-1)
+					gotoxy(R_NUM_X, R_NUM_Y);
+					printf("+"); 
 }
 
