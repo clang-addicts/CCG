@@ -5,14 +5,10 @@
 
 int main( int argc, char **argv )
 {
-	int input;
-	while(1)
-	{
-		if(kbhit())
-		{
-			input = getch(); 
-			printf("%d\n",input);
-			if(input == ESC) break;
-		}
-	}
+int R_NUM;
+        srand(time(0));
+        
+            R_NUM=rand()%100;
+            if(R_NUM>-1) printf("%d\n",R_NUM);
+        
 }

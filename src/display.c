@@ -82,8 +82,6 @@ void display_selection_change(int menu_selection){
 }
 
 void display_play_box(){
-
 	display_box_full(10, 0, 100, 30, 200);
 	display_box_full(11, 1, 98, 28, 0);
-
 }

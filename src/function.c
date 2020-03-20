@@ -1,4 +1,3 @@
-
 #include <windows.h>
 
 //Changes the mouse position to the designated cordinates

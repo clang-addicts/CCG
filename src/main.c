@@ -32,7 +32,7 @@ void quit_program()
 int main(int argc, char **argv)
 {	
 	int user_input = 0;
-	int user_selection = 0;
+	int user_selection = 0;*
 
 	init();
 	display_menu();
