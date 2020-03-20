@@ -21,13 +21,22 @@ int init_snake()
 
 	display_clear(0);
 	display_play_box();
-	random_food();
 
+	SetColor(4);
+	int R_NUM_X, R_NUM_Y;
+        srand(time(0));
+            R_NUM_X=rand()%100;
+            R_NUM_Y=rand()%30;
+            if(R_NUM_X>9) 
+				if(R_NUM_Y>-1)
+					gotoxy(R_NUM_X, R_NUM_Y);
+					printf("+"); 
+	
 	char in;
 	int x = 0, y = 0;
 	while(1){
 		if(kbhit()){
-			SetColor(0); gotoxy(x, y); printf("  ");
+			SetColor(0); gotoxy(x, y); printf(" ");
 			in=getch();
 			switch(in){
 				case 'w' : 
@@ -43,20 +52,11 @@ int init_snake()
 				case 'D' : 
 				case ASCII_ARROW_RIGHT : x+=2; break;
 			}	
-			SetColor(260); gotoxy(x, y); printf("  ");
+			SetColor(1); gotoxy(x, y); printf("*");
 		}
 	}
+
 }
 
-int random_food(){
-	SetColor(4);
-	int R_NUM_X, R_NUM_Y;
-        srand(time(0));
-            R_NUM_X=rand()%100;
-            R_NUM_Y=rand()%30;
-            if(R_NUM_X>9) 
-				if(R_NUM_Y>-1)
-					gotoxy(R_NUM_X, R_NUM_Y);
-					printf("+"); 
-}
+
 
