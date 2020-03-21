@@ -15,6 +15,7 @@ void init()
 	display_set_fullscreen();
 	display_set_screen_size(DISPLAY_SIZE_X,DISPLAY_SIZE_Y);
 	cursor(FALSE);
+	return;
 }
 
 void de_init()
@@ -22,11 +23,12 @@ void de_init()
 	return;
 }
 
-void quit_program()
+int quit_program()
 {
 	de_init();
 	gotoxy(0,0);
 	exit(0);
+	return 0;
 }
 
 int main(int argc, char **argv)
