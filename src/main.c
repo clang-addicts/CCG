@@ -9,7 +9,7 @@
 #include "letter.c"
 #include "display.c"
 #include "snake/game.c"
-
+#include "tetris/init_tetris.c"
 void init() 
 {
 	display_set_fullscreen();
@@ -46,7 +46,7 @@ int main(int argc, char **argv)
 			user_input = getch();
 			switch( user_input )
 			{
-				case ASCII_ESC: 
+				case ASCII_ESC:
 				{
 					quit_program();
 				}
@@ -57,7 +57,8 @@ int main(int argc, char **argv)
 						case 0:
 						{
 							// START GAME
-							init_snake();
+//							init_snake();
+							init_tetris();
 							quit_program();
 							break;
 						}
