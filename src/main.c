@@ -8,7 +8,7 @@
 
 #include "letter.c"
 #include "display.c"
-#include "game.c"
+#include "snake/game.c"
 
 void init() 
 {
