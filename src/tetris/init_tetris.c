@@ -3,13 +3,13 @@ int init_tetris()
 	
 	display_clear(0); //화면을 흰색으로 채우는것.
 	//right
-	display_box_edge(130, 2, 64, 62, 240);		
-	display_box_edge(196, 2, 40, 20, 240);	
-	display_box_edge(196, 30, 40, 34, 240);
+	display_box_edge(132, 2, 64, 62, 144);		
+	display_box_edge(198, 2, 40, 20, 144);	
+	display_box_edge(198, 30, 40, 34, 144);
 	//left
-	display_box_edge(46, 2, 64, 62, 240);		
-	display_box_edge(4, 2, 40, 20, 240);	
-	display_box_edge(4, 30, 40, 34, 240);
+	display_box_edge(44, 2, 64, 62, 200);		
+	display_box_edge(2, 2, 40, 20, 200);	
+	display_box_edge(2, 30, 40, 34, 200);
 	
 	//right
 	int right_player_score = 0;
@@ -21,20 +21,22 @@ int init_tetris()
 	int left_line = 0;
 	
 	//right
-	gotoxy(199, 32); printf("SCORE");
-	gotoxy(199, 34); printf("%d", right_player_score);
-	gotoxy(199, 40); printf("LEVEL");
-	gotoxy(199, 42); printf("%d", right_level); 
-	gotoxy(199, 48); printf("LINE");
-	gotoxy(199, 50); printf("%d", right_line); 
+	SetColor(144);
+	gotoxy(202, 32); printf("SCORE");
+	gotoxy(202, 34); printf("%d", right_player_score);
+	gotoxy(202, 40); printf("LEVEL");
+	gotoxy(202, 42); printf("%d", right_level); 
+	gotoxy(202, 48); printf("LINE");
+	gotoxy(202, 50); printf("%d", right_line); 
 	
 	//left
-	gotoxy(7, 32); printf("SCORE");
-	gotoxy(7, 34); printf("%d", left_player_score);
-	gotoxy(7, 40); printf("LEVEL");
-	gotoxy(7, 42); printf("%d", left_level); 
-	gotoxy(7, 48); printf("LINE");
-	gotoxy(7, 50); printf("%d", left_line); 
+	SetColor(200);
+	gotoxy(33, 32); printf("SCORE");
+	gotoxy(37, 34); printf("%d", left_player_score);
+	gotoxy(33, 40); printf("LEVEL");
+	gotoxy(37, 42); printf("%d", left_level); 
+	gotoxy(34, 48); printf("LINE");
+	gotoxy(37, 50); printf("%d", left_line); 
 	
 	//vs
 	letter_print_char(110, 30, 'V', 200, 0); 
