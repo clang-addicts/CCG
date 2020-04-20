@@ -9,6 +9,7 @@
 #include "letter.c"
 #include "display.c"
 #include "snake/game.c"
+#include "tetris/game.c"
 #include "tetris/init_tetris.c"
 void init() 
 {
@@ -59,6 +60,7 @@ int main(int argc, char **argv)
 							// START GAME
 //							init_snake();
 							init_tetris();
+							block_drop();
 							quit_program();
 							break;
 						}
