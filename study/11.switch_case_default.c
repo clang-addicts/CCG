@@ -2,7 +2,6 @@
 
 int main(){
 	int a = 2123412;
-	
 	switch (a){
 		case 2123412 :
 			{
