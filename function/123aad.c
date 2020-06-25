@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <windows.h>
 
-#include "function.c"
+#include "gotoxy.c"
 
 int main (){
 	int posX, posY;

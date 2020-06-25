@@ -1,6 +1,10 @@
 #include <stdio.h>
+#include <windows.h>
 
-int main(int argc, char **argv) 
-{
+#include "gotoxy.h"
 
+void gotoxy(short POS_X, short POS_Y)
+{	
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),(COORD){X,Y});
 }
+
