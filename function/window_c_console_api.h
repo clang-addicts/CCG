@@ -1,7 +1,10 @@
-#ifndef _GOTOXY_H_
-#define _GOTOXY_H_
+#ifndef _WINDOW_C_CONSOLE_API_H_
+#define _WINDOW_C_CONSOLE_API_H_
 
-#define <windows.h> /* calling Mircosoft Console API */
+// by : ashz
+// reason : Windows Console API : Cursor Position Editing Code
+
+#include <windows.h> /* calling Mircosoft Console API */
 
 /*
     CONSOLE_SET_COLOR( (int)0~255 )
