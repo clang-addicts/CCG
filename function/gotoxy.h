@@ -1,7 +1,14 @@
 #ifndef _GOTOXY_H_
 #define _GOTOXY_H_
 
-#define POS_X 1
-#define POS_Y 1
+void SetColor(int color) 
+{
+	SetConsoleTextAttribute (GetStdHandle (STD_OUTPUT_HANDLE), color);
+}
 
-#endif
+void gotoxy(short X, short Y)
+{	
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),(COORD){X,Y});
+}
+
+#endif	
