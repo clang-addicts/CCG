@@ -9,7 +9,7 @@
     CONSOLE_SET_COLOR
 */
 int main(int argc, char **argv){
-    
+
     int inputX, inputY;
 	while(1)
     {
